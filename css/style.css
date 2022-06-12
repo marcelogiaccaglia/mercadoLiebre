@@ -1,0 +1,245 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/****************** Main Header ******************/
+
+.box1 {
+    background-color: #EAC926;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mainLogo1 {
+    width: 100%;
+}
+.mainLogo2 {
+    width: 50%;
+}
+.search1 {
+    width: 100%;
+}
+.search2 {
+    width: 50%;
+}
+.title1 {
+    width: 100%;
+}
+.title1a {
+    color: #03264C;
+}
+.nav1 { 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nav2 {
+    background-color: #0044AA;
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.nav2:hover {
+    background-color: #0022AA;
+    cursor: pointer;
+}
+nav {
+    display: none;
+}
+ul#blueStyle li {
+    color: #03264C;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #03264C;
+}
+
+
+/****************** Banner ******************/
+
+.box2 {
+    margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner {
+    width: 100%;
+}
+
+
+/****************** Main Index ******************/
+
+.mainSection{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.bodyCentral {
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.title2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.title2a {
+    color: #666;
+    font-size: 24px;
+    vertical-align: middle;
+    line-height: normal;
+    padding: 0%;
+    margin: 20px 0px 20px 0px;
+    padding-left: 15px;
+    width: 90%;
+    box-sizing: border-box;
+}
+.articles {
+   background-color: white;
+   width: auto;
+   margin: 10px 20px 10px 20px;
+   padding: 15px; 
+   box-sizing: border-box; 
+}
+.articlesUp {
+    background-color: white;
+    width: auto;
+    margin: 0px 20px 10px 20px;
+    padding: 15px; 
+    box-sizing: border-box; 
+}
+.articlesDown {
+    background-color: white;
+    width: auto;
+    margin: 10px 20px 0px 20px;
+    padding: 15px; 
+    box-sizing: border-box; 
+}
+.imgProduct {
+    width: 100%;
+}
+.greenTruck {
+    color:#39b54a;
+}
+.precios {
+    font-size: 18px;
+}
+.sale {
+    font-size: 16px;
+    color: #39b54a;
+}
+.titleGray {
+    color: #666;
+    font-size: 16px;
+}
+
+/****************** Main Register ******************/
+
+.mainRegister {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ebebeb;
+}
+.option { 
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+.titleRegister {
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+.radioBox {
+    width: 100%;
+}
+.checkBx {
+    width: 100%;
+}
+.resetButton {
+    color: white;
+    background-color: #AA0044;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-width: 0px;
+}
+.resetButton:hover {
+    background-color: #CC1155;
+}
+
+/****************** Main Login ******************/
+
+.mainLogin {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ebebeb;
+}
+.formBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.loginBox {
+    width: 100%;
+    padding: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-width: 0px;
+}
+.loginButton {
+    color: white;
+    background-color: #0044AA;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-width: 0px;
+}
+.loginButton:hover {
+    background-color: #0022AA;
+}
+
+
+/****************** Footer ******************/
+
+.footerBox {
+    width: 100%;
+    padding: 10px 5% 10px 5%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footerArticles {
+    width: auto;
+    margin: 10px 0px;
+    box-sizing: border-box;
+}
+.colorBlue {
+    color: #1259c3;
+}
+.colorGrayP {
+    color: #666;
+    font-size: 12px;
+}
+.piePagina {
+    font-size: 12px;
+}
