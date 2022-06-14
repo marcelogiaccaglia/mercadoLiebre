@@ -16,16 +16,22 @@ body {
     flex-wrap: wrap;
 }
 .mainLogo1 {
-    width: 100%;
+    width: 50%;
 }
 .mainLogo2 {
+    width: 100%;
+}
+.search0 {
     width: 50%;
 }
 .search1 {
     width: 100%;
 }
 .search2 {
-    width: 50%;
+    width: 100%;
+}
+.search3 {
+    width: 100%;
 }
 .title1 {
     width: 100%;
@@ -107,45 +113,77 @@ a {
     line-height: normal;
     padding: 0%;
     margin: 20px 0px 20px 0px;
-    padding-left: 15px;
+    padding-left: 20px;
     width: 90%;
     box-sizing: border-box;
 }
 .articles {
-   background-color: white;
-   width: auto;
-   margin: 10px 20px 10px 20px;
-   padding: 15px; 
-   box-sizing: border-box; 
-}
-.articlesUp {
+    display: flex;
+    flex-wrap: wrap;
     background-color: white;
     width: auto;
-    margin: 0px 20px 10px 20px;
-    padding: 15px; 
+    margin: 10px 20px 10px 20px; 
+    box-sizing: border-box; 
+}
+.articlesUp {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    width: auto;
+    margin: 0px 20px 10px 20px; 
     box-sizing: border-box; 
 }
 .articlesDown {
+    display: flex;
+    flex-wrap: wrap;
     background-color: white;
     width: auto;
-    margin: 10px 20px 0px 20px;
-    padding: 15px; 
+    margin: 10px 20px 0px 20px; 
     box-sizing: border-box; 
+}
+.imgProdBox {
+    width: 100%;
 }
 .imgProduct {
     width: 100%;
 }
+.descriptionBox {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    position: relative;
+}
 .greenTruck {
+    display: flex;
+    flex-wrap: wrap;
     color:#39b54a;
+    position: absolute;
+    left: 280px;
+    bottom: 93px;
+    border: #B3C2F2 solid 1px;
+    justify-content: center;
+    align-content: center;
+    padding: 7px;
+    border-radius: 100%;
 }
 .precios {
-    font-size: 18px;
+    font-size: 20px;
+    flex-grow: 0.3;
+    font-weight: bold;
 }
 .sale {
     font-size: 16px;
     color: #39b54a;
+    flex-grow: 0.7;
+    align-self: center;
+    justify-content: flex-start;
 }
-.titleGray {
+.description {
+    width: 100%;
+}
+.description-1 {
     color: #666;
     font-size: 16px;
 }
@@ -157,16 +195,41 @@ a {
     flex-wrap: wrap;
     background-color: #ebebeb;
 }
-.option { 
-    padding: 0px 15px;
-    box-sizing: border-box;
+.registerBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
 }
-.titleRegister {
-    padding: 0px 15px;
+.loginBox-1 {
+    padding: 10px;
+    margin: 20px;
     box-sizing: border-box;
+    border-radius: 5px;
+    border-width: 0px;
+    flex-grow: 1;
 }
 .radioBox {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.titleRegister {
+    width: 100%;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+.loginBox-2 {
+    padding: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-width: 0px;
+}
+.option { 
+    padding: 0px 15px;
+    box-sizing: border-box;
 }
 .checkBx {
     width: 100%;
@@ -197,12 +260,12 @@ a {
     flex-wrap: wrap;
 }
 .loginBox {
-    width: 100%;
     padding: 10px;
     margin: 20px;
     box-sizing: border-box;
     border-radius: 5px;
     border-width: 0px;
+    flex-grow: 1;
 }
 .loginButton {
     color: white;

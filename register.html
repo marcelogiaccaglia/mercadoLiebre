@@ -18,9 +18,13 @@
         <div class="mainLogo1">
             <img class="mainLogo2" src="imagenes/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
         </div>
-        <div class="search1">    
-            <input class="search2" type="search" name="Buscar" id="Buscar" placeholder="Buscar productos, marcas y más.">   
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div class="search0">
+            <div class="search1">    
+                <input class="search2" type="search" name="Buscar" id="Buscar" placeholder="Buscar productos, marcas y más.">   
+            </div>
+            <div class="search3">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
         </div>
         <div class="title1">    
             <h5 class="title1a"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</h5>
@@ -43,35 +47,37 @@
     </header>
     <main class="mainRegister"> <!-- Main Register -->
         <form class="formBox" action="home.html" method="post">
-            <input class="loginBox" type="text" name="name" id="name" placeholder="Nombre Usuario">
-            <input class="loginBox" type="text" name="user" id="user" placeholder="Nombre Usuario">
-            <input class="loginBox" type="email" name="email" id="email" placeholder="Email">
-            <label class="titleRegister" for="birht">Fecha de Nacimiento</label>
-            <input class="loginBox" type="date" name="birht" id="birht">
-            <input class="loginBox" type="text" name="adress" id="adress" placeholder="Domicilio">
+            <div class="registerBox">
+                <input class="loginBox-1" type="text" name="name" id="name" placeholder="Nombre Usuario">
+                <input class="loginBox-1" type="text" name="user" id="user" placeholder="Nombre Usuario">
+                <input class="loginBox-1" type="email" name="email" id="email" placeholder="Email">
+                <label class="titleRegister" for="birht">Fecha de Nacimiento</label>
+                <input class="loginBox-1" type="date" name="birht" id="birht">
+                <input class="loginBox-1" type="text" name="adress" id="adress" placeholder="Domicilio">
+            </div>
             <div class="radioBox">
                 <div class="titleRegister">
                     <h3>Perfil del Usuario</h3>
                 </div>
-                <input class="loginBox" type="radio" name="userTipe" id="userTipe" value="vendedor"><p class="option">Vendedor</p>
-                <input class="loginBox" type="radio" name="userTipe" id="userTipe" value="comprador"><p class="option">Comprador</p>
+                <input class="loginBox-2" type="radio" name="userTipe" id="userTipe" value="comprador"><p class="option">Comprador</p>
+                <input class="loginBox-2" type="radio" name="userTipe" id="userTipe" value="vendedor"><p class="option">Vendedor</p>
             </div>
             <div class="checkBx">
-            <div class="titleRegister">
-                <h3>Intereses</h3>
-            </div>
-                <input class="loginBox" type="checkbox" name="interest" id="interest" value="electro"><p class="option">Electro</p>
-                <input class="loginBox" type="checkbox" name="interest" id="interest" value="moda"><p class="option">Moda</p>
-                <input class="loginBox" type="checkbox" name="interest" id="interest" value="hogar"><p class="option">Hogar</p>
-                <input class="loginBox" type="checkbox" name="interest" id="interest" value="jugeteria"><p class="option">Jugeteria</p>
-                <input class="loginBox" type="checkbox" name="interest" id="interest" value="vidaSana"><p class="option">Vida Sana</p> 
+                <div class="titleRegister">
+                    <h3>Intereses</h3>
+                </div>
+                <input class="loginBox-1" type="checkbox" name="interest" id="interest" value="electro"><p class="option">Electro</p>
+                <input class="loginBox-1" type="checkbox" name="interest" id="interest" value="moda"><p class="option">Moda</p>
+                <input class="loginBox-1" type="checkbox" name="interest" id="interest" value="hogar"><p class="option">Hogar</p>
+                <input class="loginBox-1" type="checkbox" name="interest" id="interest" value="jugeteria"><p class="option">Jugeteria</p>
+                <input class="loginBox-1" type="checkbox" name="interest" id="interest" value="vidaSana"><p class="option">Vida Sana</p> 
             </div>
             <div class="titleRegister">
                 <h3>Foto Usuario</h3>
             </div>
-            <input class="loginBox" type="file" name="photo" id="foto">
-            <input class="loginBox" type="password" name="password" id="password" placeholder="Contraseña" minlength="8">
-            <input class="loginBox" type="password" name="password" id="password" placeholder="Confirmar Contraseña" minlength="8">
+            <input class="loginBox-1" type="file" name="photo" id="foto">
+            <input class="loginBox-1" type="password" name="password" id="password" placeholder="Contraseña" minlength="8">
+            <input class="loginBox-1" type="password" name="password" id="password" placeholder="Confirmar Contraseña" minlength="8">
             <button class="loginButton" type="submit">Enviar</button>
             <button class="resetButton" type="reset">Borrar</button>
         </form>
