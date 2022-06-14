@@ -233,6 +233,20 @@ a {
 }
 .checkBx {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.checkBx-1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.loginBox-3 {
+    padding: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-width: 0px;
 }
 .resetButton {
     color: white;
