@@ -320,3 +320,22 @@ a {
 .piePagina {
     font-size: 12px;
 }
+
+
+/*************** Media Query ******************/
+
+@media (min-width: 768px){
+    .box1 {
+        background-color: blue;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1025px){
+    .box1 {
+        background-color: green;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
