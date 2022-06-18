@@ -323,6 +323,13 @@ a {
     display: flex;
     flex-wrap: wrap;
 }
+.footerBox-2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
 .footerArticles {
     width: 100%;
     margin: 10px 0px;
@@ -370,9 +377,22 @@ a {
     }
 }
 
-@media (min-width: 1025px){
+@media (min-width: 1024px){
     .box1 {
         background-color: green;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footerBox-2 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .footerArticles {
+        width: 33%;
+        margin: 10px 0px;
+        box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
     }
