@@ -14,27 +14,48 @@ body {
     background-color: #EAC926;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    padding: 5%;
 }
 .mainLogo1 {
     width: 50%;
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: center;
 }
 .mainLogo2 {
     width: 100%;
 }
 .search0 {
     width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3% 0%;
+    box-sizing: border-box;
+    align-items: center;
 }
 .search1 {
-    width: 100%;
-}
+    border: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 85%;
+    height: 7vh;
+ }
 .search2 {
-    width: 100%;
-}
-.search3 {
-    width: 100%;
+    border: 0px; 
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white;
+    width: 15%;
+    height: 7vh;
 }
 .title1 {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .title1a {
     color: #03264C;
@@ -51,13 +72,10 @@ body {
     height: 40px;
     color: white;
     font-size: 20px;
-    padding: 10px;
     text-align: center;
     vertical-align: middle;
     line-height: 40px;
     border-radius: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 .nav2:hover {
     background-color: #0022AA;
