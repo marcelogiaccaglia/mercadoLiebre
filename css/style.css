@@ -324,16 +324,36 @@ a {
     flex-wrap: wrap;
 }
 .footerArticles {
-    width: auto;
+    width: 100%;
     margin: 10px 0px;
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
 }
 .colorBlue {
+    width: 100%;
     color: #1259c3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
-.colorGrayP {
+.msg-1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.msg-2 {
+    width: 100%;
     color: #666;
     font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    
 }
 .piePagina {
     font-size: 12px;
