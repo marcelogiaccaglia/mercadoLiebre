@@ -27,6 +27,7 @@ body {
 }
 .mainLogo2 {
     width: 100%;
+    height: 7vh;
 }
 .search0 {
     width: 50%;
@@ -81,10 +82,14 @@ body {
     background-color: #0022AA;
     cursor: pointer;
 }
-nav {
+.navStyle-1 {
     display: none;
 }
-ul#blueStyle li {
+ul#navStyle-2 li {
+    color: #03264C;
+    list-style-type: none;
+}
+ul#navStyle-3 li {
     color: #03264C;
     list-style-type: none;
 }
@@ -372,28 +377,91 @@ a {
 @media (min-width: 768px){
     .box1 {
         background-color: blue;
+        padding: 2%;
+    }
+    .mainLogo1 {
+        width: 23%;
+        padding: 0%;
+    }
+    .mainLogo2 {
+        height: 5vh;
+    }
+    .search0 {
+        width: 36%;
+    }
+    .search1 {
+        height: 5vh;
+     }
+    .search2 {
+        height: 5vh;
+    }
+    .title1 {
+        width: 35%;
+        margin: 0% 3%;
+        align-items: center;
+    }
+    .nav1 { 
+        display: none;
+    }
+    .navStyle-1 {
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
     }
-}
+    ul#navStyle-2 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        flex-direction: row;
+        box-sizing: border-box;
+        justify-content: space-between;
+        padding: 0px 60px 0px 10px;
+        margin-bottom: 5px;
+    }
+    ul#navStyle-3 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin-bottom: 5px;
+        padding: 0px 10px 0px 30px;
+    }
+   }
 
 @media (min-width: 1024px){
     .box1 {
         background-color: green;
-        display: flex;
-        flex-wrap: wrap;
+    }
+    .mainLogo1 {
+        align-items: flex-start;
+    }
+    .mainLogo2 {
+        height: 8vh;
+    }
+    .search0 {
+        width: 44%;
+        padding: 1% 0% 3% 1%;
+    }
+    .title1 {
+        width: 27%;
+        margin: 0% 3%;
+        justify-content: flex-end;
+    }
+    .title1a {
+        margin-block-start: 0px;
+    }
+    ul#navStyle-2 {
+        padding: 0px 180px 0px 10px;
+    }
+    ul#navStyle-3 {
+        padding: 0px 10px 0px 150px;
     }
     .footerBox-2 {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
         flex-direction: row;
     }
     .footerArticles {
         width: 33%;
-        margin: 10px 0px;
-        box-sizing: border-box;
-        display: flex;
-        flex-wrap: wrap;
     }
 }
