@@ -184,7 +184,7 @@ a {
     color:#39b54a;
     position: absolute;
     left: 84%;
-    bottom: 74%;
+    top: -50%;
     border: #B3C2F2 solid 1px;
     justify-content: center;
     align-content: center;
@@ -205,6 +205,7 @@ a {
 }
 .description {
     width: 100%;
+    display: none;
 }
 .description-1 {
     color: #666;
@@ -428,6 +429,21 @@ a {
         margin-bottom: 5px;
         padding: 0px 10px 0px 30px;
     }
+    .bodyCentral {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .articles {
+        width: 40%; 
+    }
+    .articlesUp {
+        width: 40%;
+        margin: 10px 20px 10px 20px;
+    }
+    .articlesDown {
+        width: 40%; 
+        margin: 10px 20px 10px 20px;
+    }
    }
 
 @media (min-width: 1024px){
@@ -457,6 +473,18 @@ a {
     }
     ul#navStyle-3 {
         padding: 0px 10px 0px 150px;
+    }
+    .bodyCentral {
+        padding-bottom: 100px;
+    }
+    .articles {
+        width: 20%; 
+    }
+    .articlesUp {
+        width: 20%;
+    }
+    .articlesDown {
+        width: 20%; 
     }
     .footerBox-2 {
         flex-direction: row;
