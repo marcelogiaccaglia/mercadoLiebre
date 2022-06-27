@@ -531,8 +531,6 @@ a {
     .articles:hover .description {
         display: block;
     }
-
-    
     .footerBox-2 {
         flex-direction: row;
     }
