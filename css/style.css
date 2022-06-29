@@ -30,6 +30,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    height: 26vh;
     padding: 5%;
 }
 .mainLogo1 {
@@ -69,6 +70,7 @@ body {
 }
 .title1 {
     width: 100%;
+    height: 10vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -122,9 +124,12 @@ a {
     margin: 0%;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    height: 13vh;
 }
 .banner {
     width: 100%;
+    height: 13vh;
 }
 
 
@@ -134,21 +139,17 @@ a {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-}
-.bodyCentral {
     background-color: var(--gray);
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
 }
 .title2 {
     width: 100%;
+    height: 8vh;
     display: flex;
     flex-wrap: wrap;
 }
 .title2a {
     color: var(--dark-gray);
-    font-size: 24px;
+    font-size: 23px;
     vertical-align: middle;
     line-height: normal;
     padding: 0%;
@@ -159,7 +160,7 @@ a {
 }
 .title2b {
     color: var(--dark-gray);
-    font-size: 24px;
+    font-size: 23px;
     vertical-align: middle;
     line-height: normal;
     padding: 0%;
@@ -167,6 +168,11 @@ a {
     padding-left: 20px;
     width: 90%;
     box-sizing: border-box;
+}
+.bodyCentral {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 .articles {
     display: flex;
@@ -352,6 +358,7 @@ a {
 
 .footerBox {
     width: 100%;
+    height: 71vh;
     padding: 10px 5% 10px 5%;
     box-sizing: border-box;
     display: flex;
@@ -366,6 +373,7 @@ a {
 }
 .footerArticles {
     width: 100%;
+    height: 19vh;
     margin: 10px 0px;
     box-sizing: border-box;
     display: flex;
@@ -406,6 +414,7 @@ a {
 @media (min-width: 768px){
     .box1 {
         background-color: blue;
+        height: 17vh;
         padding: 2%;
     }
     .mainLogo1 {
@@ -426,6 +435,7 @@ a {
     }
     .title1 {
         width: 35%;
+        height: 11vh;
         margin: 0% 3%;
         align-items: center;
     }
@@ -436,6 +446,7 @@ a {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        height: 8vh;
     }
     ul#navStyle-2 {
         display: flex;
@@ -457,6 +468,12 @@ a {
         margin-bottom: 5px;
         padding: 0px 10px 0px 30px;
     }
+    .box2 {
+        height: 23vh;
+    }
+    .banner {
+        height: 23vh;
+    }
     .bodyCentral {
         flex-direction: row;
         justify-content: space-around;
@@ -469,7 +486,7 @@ a {
         height: 45vh;
     }
     .imgProduct {
-        height: 48vh;
+        height: 45vh;
     }
     .greenTruck > i {
         font-size: 140%;
@@ -504,8 +521,19 @@ a {
     ul#navStyle-3 {
         padding: 0px 10px 0px 150px;
     }
+    .box2 {
+        height: 31vh;
+    }
+    .banner {
+        height: 31vh;
+    }
+    .title2 {
+        height: 8vh;
+    }
     .bodyCentral {
-        padding-bottom: 100px;
+        height: 70vh;
+        align-items: flex-start;
+        flex-wrap: nowrap;
     }
     .articles {
         width: 21%;
@@ -531,10 +559,14 @@ a {
     .articles:hover .description {
         display: block;
     }
+    .footerBox {
+        height: 28vh;
+    }
     .footerBox-2 {
         flex-direction: row;
     }
     .footerArticles {
         width: 33%;
+        height: 20vh;
     }
 }
