@@ -413,7 +413,6 @@ a {
 
 @media (min-width: 768px){
     .box1 {
-        background-color: blue;
         height: 17vh;
         padding: 2%;
     }
@@ -494,9 +493,7 @@ a {
    }
 
 @media (min-width: 1024px){
-    .box1 {
-        background-color: green;
-    }
+    
     .mainLogo1 {
         align-items: flex-start;
     }
@@ -543,7 +540,12 @@ a {
     }
     .articles:hover {
         height: 65vh;
+        box-shadow: 0px 0px 10px 6px rgba(0,0,0,0.5);
+        cursor: pointer;
     }
+    /* .articles:hover .descriptionBox .greenTruck {
+        transform: rotate(-90deg);
+    } */
     .imgProdBox {
         height: 40vh;
     }
