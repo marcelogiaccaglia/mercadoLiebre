@@ -209,6 +209,8 @@ a {
     color:var(--green);
     position: absolute;
     font-size: 160%;
+    width: 25px;
+    height: 25px;
     left: 84%;
     top: -3vh;
     border: #B3C2F2 solid 3px;
@@ -216,6 +218,8 @@ a {
     align-content: center;
     padding: 7px;
     border-radius: 100%;
+    transform: rotate(0deg);
+    transition: transform 1s;
 }
 .precios {
     font-size: 20px;
@@ -489,6 +493,8 @@ a {
     }
     .greenTruck > i {
         font-size: 140%;
+        width: 20px;
+        height: 20px;
     }
    }
 
@@ -543,9 +549,9 @@ a {
         box-shadow: 0px 0px 10px 6px rgba(0,0,0,0.5);
         cursor: pointer;
     }
-    /* .articles:hover .descriptionBox .greenTruck {
+    .articles:hover .descriptionBox .greenTruck i{
         transform: rotate(-90deg);
-    } */
+    } 
     .imgProdBox {
         height: 40vh;
     }
@@ -554,6 +560,8 @@ a {
     }
     .greenTruck > i {
         font-size: 110%;
+        width: 15px;
+        height: 15px;
     }
     .description {
         display: none;   
