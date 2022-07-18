@@ -255,13 +255,30 @@ a {
 .mainRegister {
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 195vh;
     background-color: var(--gray);
+}
+.formBoxR {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 193vh;
+    padding: 0% 3%;
 }
 .registerBox {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    box-sizing: border-box;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .loginBox-1 {
     padding: 10px;
@@ -269,18 +286,21 @@ a {
     box-sizing: border-box;
     border-radius: 5px;
     border-width: 0px;
-    flex-grow: 1;
+    width: 90%;
 }
 .radioBox {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: flex-start;
 }
 .titleRegister {
     width: 100%;
     padding: 0px 15px;
     box-sizing: border-box;
     font-weight: bold;
+    width: 100%;
 }
 .loginBox-2 {
     padding: 10px;
@@ -297,11 +317,13 @@ a {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 .checkBx-1 {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 .loginBox-3 {
     padding: 10px;
@@ -310,10 +332,39 @@ a {
     border-radius: 5px;
     border-width: 0px;
 }
+.photoBox {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+}
+.passBox {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loginButton {
+    color: white;
+    background-color:var(--blue-light);
+    width: 90%;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-width: 0px;
+}
+.loginButton:hover {
+    background-color: var(--blue);
+}
 .resetButton {
     color: white;
     background-color: var(--dark-vermilion);
-    width: 100%;
+    width: 90%;
     margin: 20px;
     padding: 10px;
     box-sizing: border-box;
@@ -514,6 +565,10 @@ a {
         height: 40vh;
         padding: 0% 25%;
     }
+    /* ------ Media Query Main Register ------ */
+    .formBoxR {
+        padding: 0% 25%;
+    }
    }
 
 @media (min-width: 1024px){
@@ -593,6 +648,13 @@ a {
     }
     .formBox {
         height: 50vh;
+    }
+    /* ------ Media Query Main Register ------ */
+    .mainRegister {
+        height: 220vh;
+    }
+    .formBoxR {
+        height: 220vh;
     }
     .footerBox {
         height: 28vh;

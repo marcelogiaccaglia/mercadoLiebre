@@ -24,14 +24,14 @@
                     <li><a href="">Ayuda</a></li>
                 </ul>
                 <ul id="navStyle-3">
-                    <li><a href="./register.ejs">Creá tu cuenta</a> <i class="fa-regular fa-id-card"></i></li>
-                    <li><a href="./login.ejs">Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i></li>
+                    <li><a href="/register">Creá tu cuenta</a> <i class="fa-regular fa-id-card"></i></li>
+                    <li><a href="/login">Ingresá</a> <i class="fa-solid fa-right-to-bracket"></i></li>
                     <li><a href="">Mis compras</a> <i class="fa-solid fa-bag-shopping"></i></li>
                 </ul>
             </nav>
     </header>
     <main class="mainRegister"> <!-- Main Register -->
-        <form class="formBox" action="home.html" method="post">
+        <form class="formBoxR" action="home.html" method="post">
             <div class="registerBox">
                 <input class="loginBox-1" type="text" name="name" id="name" placeholder="Nombre Usuario">
                 <input class="loginBox-1" type="text" name="user" id="user" placeholder="Nombre Usuario">
@@ -70,11 +70,15 @@
             <div class="titleRegister">
                 <h3>Foto Usuario</h3>
             </div>
-            <input class="loginBox-1" type="file" name="photo" id="foto">
-            <input class="loginBox-1" type="password" name="password" id="password" placeholder="Contraseña" minlength="8">
-            <input class="loginBox-1" type="password" name="password" id="password" placeholder="Confirmar Contraseña" minlength="8">
-            <button class="loginButton" type="submit">Enviar</button>
-            <button class="resetButton" type="reset">Borrar</button>
+            <div class="photoBox">
+                <input class="loginBox-1" type="file" name="photo" id="foto">
+            </div>
+            <div class="passBox">
+                <input class="loginBox-1" type="password" name="password" id="password" placeholder="Contraseña" minlength="8">
+                <input class="loginBox-1" type="password" name="password" id="password" placeholder="Confirmar Contraseña" minlength="8">
+                <button class="loginButton" type="submit">Enviar</button>
+                <button class="resetButton" type="reset">Borrar</button>
+            </div>
         </form>
     </main>
     <footer class="footerBox"> <!-- Footer -->
