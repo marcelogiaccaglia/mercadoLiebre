@@ -329,11 +329,21 @@ a {
 .mainLogin {
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 34vh;
     background-color: var(--gray);
 }
 .formBox {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 34vh;
+    padding: 0% 3%;
 }
 .loginBox {
     padding: 10px;
@@ -341,12 +351,12 @@ a {
     box-sizing: border-box;
     border-radius: 5px;
     border-width: 0px;
-    flex-grow: 1;
+    width: 90%;
 }
 .loginButton {
     color: white;
     background-color:var(--blue-light);
-    width: 100%;
+    width: 90%;
     margin: 20px;
     padding: 10px;
     box-sizing: border-box;
@@ -428,7 +438,7 @@ a {
         height: 5vh;
     }
     .search0 {
-        width: 36%;
+        width: 37%;
     }
     .search1 {
         height: 5vh;
@@ -437,9 +447,9 @@ a {
         height: 5vh;
     }
     .title1 {
-        width: 35%;
+        width: 36%;
         height: 11vh;
-        margin: 0% 3%;
+        margin: 0% 1% 0% 3%;
         align-items: center;
     }
     .nav1 { 
@@ -495,6 +505,14 @@ a {
         font-size: 140%;
         width: 20px;
         height: 20px;
+    }
+    /* ------ Media Query Main Login ------ */
+    .mainLogin {
+        height: 40vh;
+    }
+    .formBox {
+        height: 40vh;
+        padding: 0% 25%;
     }
    }
 
@@ -568,6 +586,13 @@ a {
     }
     .articles:hover .description {
         display: block;
+    }
+    /* ------ Media Query Main Login ------ */
+    .mainLogin {
+        height: 50vh;
+    }
+    .formBox {
+        height: 50vh;
     }
     .footerBox {
         height: 28vh;
