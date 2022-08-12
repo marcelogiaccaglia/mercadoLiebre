@@ -3,6 +3,7 @@ const EXPRESS = require("express");
 const METHODOVERRIDE = require("method-override");
 const homeRoute = require("./routes/homeRoute");
 const usersRoute = require("./routes/usersRoute");
+const productsRoute = require("./routes/productsRoute");
 
 /* Express */
 const APP = EXPRESS();
@@ -19,6 +20,7 @@ APP.use(METHODOVERRIDE("_method"));
 /* Routes */
 APP.use("/", homeRoute);
 APP.use("/users", usersRoute);
+APP.use("/products", productsRoute);
 
 APP.get("/products/:idProducts", function (req, res) {
   let paramsProducts = req.params.idProducts;

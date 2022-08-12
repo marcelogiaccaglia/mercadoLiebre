@@ -55,99 +55,51 @@
           <div class="titleRegister">
             <h3>Perfil del Usuario</h3>
           </div>
-          <!-- COMO VALIDAR Y ENVIAR UN CHECKED ?????? -->
-          <% if(userEdit.userTipe === "comprador"){%>
-          <input
-            class="loginBox-2"
-            type="radio"
-            name="userTipe"
-            id="comprador"
-            value="comprador"
-            checked
+          <!-- Validacion y envio de checked como atributo -->
+
+          <input class="loginBox-2" type="radio" name="userTipe" id="comprador"
+          value="comprador" <%if(userEdit.userTipe==="comprador"){%>checked<%}%>
           />
+
           <p class="option">Comprador</p>
-          <input
-            class="loginBox-2"
-            type="radio"
-            name="userTipe"
-            id="vendedor"
-            value="vendedor"
+          <input class="loginBox-2" type="radio" name="userTipe" id="vendedor"
+          value="vendedor" <%if(userEdit.userTipe==="vendedor"){%>checked<%}%>
           />
           <p class="option">Vendedor</p>
-          <%}if (userEdit.userTipe === "vendedor" ){ %>
-          <input
-            class="loginBox-2"
-            type="radio"
-            name="userTipe"
-            id="comprador"
-            value="comprador"
-          />
-          <p class="option">Comprador</p>
-          <input
-            class="loginBox-2"
-            type="radio"
-            name="userTipe"
-            id="userTipe"
-            id="vendedor"
-            value="vendedor"
-            checked
-          />
-          <p class="option">Vendedor</p>
-          <% } %>
         </div>
         <div class="checkBx">
           <div class="titleRegister">
-            <!-- COMO VALIDAR Y ENVIAR UN CHECKED ?????? -->
             <h3>Intereses</h3>
           </div>
+          <!-- Validacion y envio de checked como atributo -->
           <div class="checkBx-1">
-            <input
-              class="loginBox-3"
-              type="checkbox"
-              name="interest"
-              id="interest"
-              value="electro"
-            />
+            <input class="loginBox-3" type="checkbox" name="interest"
+            id="interest" value="electro"
+            <%if(userEdit.interest.includes("electro")){%>checked<%}%> />
             <p class="option">Electro</p>
           </div>
           <div class="checkBx-1">
-            <input
-              class="loginBox-3"
-              type="checkbox"
-              name="interest"
-              id="interest"
-              value="moda"
-            />
+            <input class="loginBox-3" type="checkbox" name="interest"
+            id="interest" value="moda"
+            <%if(userEdit.interest.includes("moda")){%>checked<%}%> />
             <p class="option">Moda</p>
           </div>
           <div class="checkBx-1">
-            <input
-              class="loginBox-3"
-              type="checkbox"
-              name="interest"
-              id="interest"
-              value="hogar"
-            />
+            <input class="loginBox-3" type="checkbox" name="interest"
+            id="interest" value="hogar"
+            <%if(userEdit.interest.includes("hogar")){%>checked<%}%> />
             <p class="option">Hogar</p>
           </div>
           <div class="checkBx-1">
-            <input
-              class="loginBox-3"
-              type="checkbox"
-              name="interest"
-              id="interest"
-              value="jugeteria"
-            />
+            <input class="loginBox-3" type="checkbox" name="interest"
+            id="interest" value="jugeteria"
+            <%if(userEdit.interest.includes("jugeteria")){%>checked<%}%> />
             <p class="option">Jugeteria</p>
           </div>
           <div class="checkBx-1">
-            <input
-              class="loginBox-3"
-              type="checkbox"
-              name="interest"
-              id="interest"
-              value="vidaSana"
-            />
+            <input class="loginBox-3" type="checkbox" name="interest"
+            id="interest" value="vidaSana"
+            <%if(userEdit.interest.includes("vidaSana")){%>checked<%} %> />
             <p class="option">Vida Sana</p>
           </div>
         </div>
