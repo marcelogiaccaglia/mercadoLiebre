@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-include("../partials/head")%>
+
+  <body>
+    <%-include("../partials/header")%>
+
+    <main class="mainDetail">
+      <!-- Main Login -->
+      <h2 class="detailInfo">
+        Detalle de Nuestro Cliente <%= userSelect.name %>
+      </h2>
+      <div class="detailInfo">
+        <p>
+          Nombre Completo: <%= userSelect.name %> <%= userSelect.lastName %>
+        </p>
+      </div>
+      <div class="detailInfo">
+        <p>Email: <%= userSelect.email %></p>
+      </div>
+      <div class="detailInfo">
+        <p>Fecha Nacimiento: <%= userSelect.birht %></p>
+      </div>
+      <div class="detailInfo">
+        <p>Domicilio: <%= userSelect.adress %></p>
+      </div>
+      <div class="detailInfo">
+        <p>Tipo: <%= userSelect.userTipe %></p>
+      </div>
+      <div class="detailInfo">
+        <p>Intereses: <%= userSelect.interest %></p>
+      </div>
+      <div class="detailInfo">
+        <p>Fotografia: <%= userSelect.photo %></p>
+      </div>
+      <div class="detailInfo">
+        <p>Contraseña: <%= userSelect.password1 %></p>
+      </div>
+      <div class="detailInfo">
+        <form action="/users/edit/<%= userSelect.id %>" method="get">
+          <button type="submit">Editar</button>
+        </form>
+      </div>
+      <div class="detailInfo">
+        <form
+          action="/users/delete/<%= userSelect.id %>?_method=DELETE"
+          method="post"
+        >
+          <button type="submit">Eliminar</button>
+        </form>
+      </div>
+    </main>
+
+    <%-include("../partials/footer")%>
+  </body>
+</html>

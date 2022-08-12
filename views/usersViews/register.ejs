@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-include("../partials/head")%>
+
+  <body>
+    <%-include("../partials/header")%>
+
+    <main class="mainRegister">
+      <!-- Main Register -->
+      <form class="formBoxR" action="/users/register/okUser" method="post">
+        <div class="registerBox">
+          <input
+            class="loginBox-1"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Nombre Usuario"
+          />
+          <input
+            class="loginBox-1"
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Apellido Usuario"
+          />
+          <input
+            class="loginBox-1"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+          />
+          <label class="titleRegister" for="birht">Fecha de Nacimiento</label>
+          <input class="loginBox-1" type="date" name="birht" id="birht" />
+          <input
+            class="loginBox-1"
+            type="text"
+            name="adress"
+            id="adress"
+            placeholder="Domicilio"
+          />
+        </div>
+        <div class="radioBox">
+          <div class="titleRegister">
+            <h3>Perfil del Usuario</h3>
+          </div>
+          <input
+            class="loginBox-2"
+            type="radio"
+            name="userTipe"
+            id="comprador"
+            value="comprador"
+          />
+          <p class="option">Comprador</p>
+          <input
+            class="loginBox-2"
+            type="radio"
+            name="userTipe"
+            id="vendedor"
+            value="vendedor"
+          />
+          <p class="option">Vendedor</p>
+        </div>
+        <div class="checkBx">
+          <div class="titleRegister">
+            <h3>Intereses</h3>
+          </div>
+          <div class="checkBx-1">
+            <input
+              class="loginBox-3"
+              type="checkbox"
+              name="interest"
+              id="interest"
+              value="electro"
+            />
+            <p class="option">Electro</p>
+          </div>
+          <div class="checkBx-1">
+            <input
+              class="loginBox-3"
+              type="checkbox"
+              name="interest"
+              id="interest"
+              value="moda"
+            />
+            <p class="option">Moda</p>
+          </div>
+          <div class="checkBx-1">
+            <input
+              class="loginBox-3"
+              type="checkbox"
+              name="interest"
+              id="interest"
+              value="hogar"
+            />
+            <p class="option">Hogar</p>
+          </div>
+          <div class="checkBx-1">
+            <input
+              class="loginBox-3"
+              type="checkbox"
+              name="interest"
+              id="interest"
+              value="jugeteria"
+            />
+            <p class="option">Jugeteria</p>
+          </div>
+          <div class="checkBx-1">
+            <input
+              class="loginBox-3"
+              type="checkbox"
+              name="interest"
+              id="interest"
+              value="vidaSana"
+            />
+            <p class="option">Vida Sana</p>
+          </div>
+        </div>
+        <div class="titleRegister">
+          <h3>Foto Usuario</h3>
+        </div>
+        <div class="photoBox">
+          <input class="loginBox-1" type="file" name="photo" id="foto" />
+        </div>
+        <div class="passBox">
+          <input
+            class="loginBox-1"
+            type="password"
+            name="password1"
+            id="password"
+            placeholder="Contraseña"
+            minlength="8"
+          />
+          <input
+            class="loginBox-1"
+            type="password"
+            name="password2"
+            id="password"
+            placeholder="Confirmar Contraseña"
+            minlength="8"
+          />
+          <button class="loginButton" type="submit">Enviar</button>
+          <button class="resetButton" type="reset">Borrar</button>
+        </div>
+      </form>
+    </main>
+
+    <%-include("../partials/footer")%>
+  </body>
+</html>

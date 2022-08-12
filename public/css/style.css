@@ -1,669 +1,675 @@
-
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 /****************** Variable ******************/
 
 :root {
-    --yellow: #EAC926;
-    --dark-gray: #666;
-    --gray: #ebebeb;
-    --dark-blue: #03264C;
-    --blue-light: #0044AA;
-    --blue: #0022AA; 
-    --green: #39b54a;
-    --vermilion: #CC1155;
-    --dark-vermilion: #AA0044;
+  --yellow: #eac926;
+  --dark-gray: #666;
+  --gray: #ebebeb;
+  --dark-blue: #03264c;
+  --blue-light: #0044aa;
+  --blue: #0022aa;
+  --green: #39b54a;
+  --vermilion: #cc1155;
+  --dark-vermilion: #aa0044;
 }
 
 /****************** Main Header ******************/
 
 .box1 {
-    background-color: var(--yellow);
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 26vh;
-    padding: 5%;
+  background-color: var(--yellow);
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 26vh;
+  padding: 5%;
 }
 .mainLogo1 {
-    width: 50%;
-    padding: 3%;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    align-items: center;
+  width: 50%;
+  padding: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: center;
 }
 .mainLogo2 {
-    width: 100%;
-    height: 7vh;
+  width: 100%;
+  height: 7vh;
 }
 .search0 {
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 3% 0%;
-    box-sizing: border-box;
-    align-items: center;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3% 0%;
+  box-sizing: border-box;
+  align-items: center;
 }
 .search1 {
-    border: 0px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    width: 85%;
-    height: 7vh;
- }
+  border: 0px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 85%;
+  height: 7vh;
+}
 .search2 {
-    border: 0px; 
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background-color: white;
-    width: 15%;
-    height: 7vh;
+  border: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: white;
+  width: 15%;
+  height: 7vh;
 }
 .title1 {
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .title1a {
-    color: var(--dark-blue);
+  color: var(--dark-blue);
 }
-.nav1 { 
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.nav1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .nav2 {
-    background-color: var(--blue-light);
-    width: 50px;
-    height: 50px;
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 5px;
+  background-color: var(--blue-light);
+  width: 50px;
+  height: 50px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
 }
 .nav2 > i {
-    vertical-align: -6px;
+  vertical-align: -6px;
 }
 .nav2:hover {
-    background-color: var(--blue);
-    cursor: pointer;
+  background-color: var(--blue);
+  cursor: pointer;
 }
 .navStyle-1 {
-    display: none;
+  display: none;
 }
 ul#navStyle-2 li {
-    color: var(--dark-blue);
-    list-style-type: none;
+  color: var(--dark-blue);
+  list-style-type: none;
 }
 ul#navStyle-3 li {
-    color: var(--dark-blue);
-    list-style-type: none;
+  color: var(--dark-blue);
+  list-style-type: none;
 }
 a {
-    text-decoration: none;
-    color: var(--dark-blue);
+  text-decoration: none;
+  color: var(--dark-blue);
 }
-
 
 /****************** Banner ******************/
 
 .box2 {
-    margin: 0%;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 13vh;
+  margin: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 13vh;
 }
 .banner {
-    width: 100%;
-    height: 13vh;
+  width: 100%;
+  height: 13vh;
 }
-
 
 /****************** Main Index ******************/
 
-.mainSection{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    background-color: var(--gray);
+.mainSection {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--gray);
 }
 .title2 {
-    width: 100%;
-    height: 8vh;
-    display: flex;
-    flex-wrap: wrap;
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  flex-wrap: wrap;
 }
 .title2a {
-    color: var(--dark-gray);
-    font-size: 23px;
-    vertical-align: middle;
-    line-height: normal;
-    padding: 0%;
-    margin: 20px 0px 10px 0px;
-    padding-left: 20px;
-    width: 90%;
-    box-sizing: border-box;
+  color: var(--dark-gray);
+  font-size: 23px;
+  vertical-align: middle;
+  line-height: normal;
+  padding: 0%;
+  margin: 20px 0px 10px 0px;
+  padding-left: 20px;
+  width: 90%;
+  box-sizing: border-box;
 }
 .title2b {
-    color: var(--dark-gray);
-    font-size: 23px;
-    vertical-align: middle;
-    line-height: normal;
-    padding: 0%;
-    margin: 10px 0px 10px 0px;
-    padding-left: 20px;
-    width: 90%;
-    box-sizing: border-box;
+  color: var(--dark-gray);
+  font-size: 23px;
+  vertical-align: middle;
+  line-height: normal;
+  padding: 0%;
+  margin: 10px 0px 10px 0px;
+  padding-left: 20px;
+  width: 90%;
+  box-sizing: border-box;
 }
 .bodyCentral {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .articles {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: white;
-    width: 100%;
-    height: 76vh;
-    margin: 10px 20px 10px 20px; 
-    padding: 0px 20px;
-    box-sizing: border-box; 
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  width: 100%;
+  height: 76vh;
+  margin: 10px 20px 10px 20px;
+  padding: 0px 20px;
+  box-sizing: border-box;
 }
 .imgProdBox {
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 .imgProduct {
-    width: 100%;
-    height: 50vh;
+  width: 100%;
+  height: 50vh;
 }
 .descriptionBox {
-    width: 100%;
-    height: 10vh;
-    border-top: 1px solid var(--gray);
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
+  width: 100%;
+  height: 10vh;
+  border-top: 1px solid var(--gray);
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
 }
 .greenTruck > i {
-    display: flex;
-    flex-wrap: wrap;
-    color:var(--green);
-    position: absolute;
-    font-size: 160%;
-    width: 25px;
-    height: 25px;
-    left: 84%;
-    top: -3vh;
-    border: #B3C2F2 solid 3px;
-    justify-content: center;
-    align-content: center;
-    padding: 7px;
-    border-radius: 100%;
-    transform: rotate(0deg);
-    transition: transform 1s;
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--green);
+  position: absolute;
+  font-size: 160%;
+  width: 25px;
+  height: 25px;
+  left: 84%;
+  top: -3vh;
+  border: #b3c2f2 solid 3px;
+  justify-content: center;
+  align-content: center;
+  padding: 7px;
+  border-radius: 100%;
+  transform: rotate(0deg);
+  transition: transform 1s;
 }
 .precios {
-    font-size: 20px;
-    flex-grow: 0.3;
-    font-weight: bold;
-    margin: 3vh 0vh;
-    align-self: center;
-    box-sizing: border-box;
+  font-size: 20px;
+  flex-grow: 0.3;
+  font-weight: bold;
+  margin: 3vh 0vh;
+  align-self: center;
+  box-sizing: border-box;
 }
 .sale {
-    font-size: 16px;
-    color: var(--green);
-    flex-grow: 0.7;
-    align-self: center;
-    margin: 3vh 0vh;
-    justify-content: flex-start;
-    box-sizing: border-box;
+  font-size: 16px;
+  color: var(--green);
+  flex-grow: 0.7;
+  align-self: center;
+  margin: 3vh 0vh;
+  justify-content: flex-start;
+  box-sizing: border-box;
 }
 .description {
-    width: 100%;
-    height: 8vh;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 .description-1 {
-    color: var(--dark-gray);
-    font-size: 16px;
+  color: var(--dark-gray);
+  font-size: 16px;
 }
+/************************************ USERS VIEWS ******************************/
 
-/****************** Main Register ******************/
+/****************** Register ******************/
 
 .mainRegister {
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    width: 100%;
-    height: 195vh;
-    background-color: var(--gray);
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  height: 195vh;
+  background-color: var(--gray);
 }
 .formBoxR {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 193vh;
-    padding: 0% 3%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 193vh;
+  padding: 0% 3%;
 }
 .registerBox {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    box-sizing: border-box;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .loginBox-1 {
-    padding: 10px;
-    margin: 20px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border-width: 0px;
-    width: 90%;
+  padding: 10px;
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-width: 0px;
+  width: 90%;
 }
 .radioBox {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    justify-content: flex-start;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: flex-start;
 }
 .titleRegister {
-    width: 100%;
-    padding: 0px 15px;
-    box-sizing: border-box;
-    font-weight: bold;
-    width: 100%;
+  width: 100%;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  font-weight: bold;
+  width: 100%;
 }
 .loginBox-2 {
-    padding: 10px;
-    margin: 20px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border-width: 0px;
+  padding: 10px;
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-width: 0px;
 }
-.option { 
-    padding: 0px 15px;
-    box-sizing: border-box;
+.option {
+  padding: 0px 15px;
+  box-sizing: border-box;
 }
 .checkBx {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 .checkBx-1 {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 .loginBox-3 {
-    padding: 10px;
-    margin: 20px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border-width: 0px;
+  padding: 10px;
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-width: 0px;
 }
 .photoBox {
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    width: 100%;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: center;
 }
 .passBox {
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .loginButton {
-    color: white;
-    background-color:var(--blue-light);
-    width: 90%;
-    margin: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border-width: 0px;
+  color: white;
+  background-color: var(--blue-light);
+  width: 90%;
+  margin: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-width: 0px;
 }
 .loginButton:hover {
-    background-color: var(--blue);
+  background-color: var(--blue);
 }
 .resetButton {
-    color: white;
-    background-color: var(--dark-vermilion);
-    width: 90%;
-    margin: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border-width: 0px;
+  color: white;
+  background-color: var(--dark-vermilion);
+  width: 90%;
+  margin: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-width: 0px;
 }
 .resetButton:hover {
-    background-color: var(--vermilion);
+  background-color: var(--vermilion);
 }
 
-/****************** Main Login ******************/
+/****************** Login ******************/
 
 .mainLogin {
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    width: 100%;
-    height: 34vh;
-    background-color: var(--gray);
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  height: 34vh;
+  background-color: var(--gray);
 }
 .formBox {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 34vh;
-    padding: 0% 3%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 34vh;
+  padding: 0% 3%;
 }
 .loginBox {
-    padding: 10px;
-    margin: 20px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border-width: 0px;
-    width: 90%;
+  padding: 10px;
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-width: 0px;
+  width: 90%;
 }
 .loginButton {
-    color: white;
-    background-color:var(--blue-light);
-    width: 90%;
-    margin: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border-width: 0px;
+  color: white;
+  background-color: var(--blue-light);
+  width: 90%;
+  margin: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-width: 0px;
 }
 .loginButton:hover {
-    background-color: var(--blue);
+  background-color: var(--blue);
 }
 
+/****************** Detail ******************/
+
+.mainDetail {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--gray);
+  text-align: center;
+}
+.detailInfo {
+  width: 100%;
+}
 
 /****************** Footer ******************/
 
 .footerBox {
-    width: 100%;
-    height: 71vh;
-    padding: 10px 5% 10px 5%;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
+  width: 100%;
+  height: 71vh;
+  padding: 10px 5% 10px 5%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
 }
 .footerBox-2 {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .footerArticles {
-    width: 100%;
-    height: 19vh;
-    margin: 10px 0px;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
+  width: 100%;
+  height: 19vh;
+  margin: 10px 0px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
 }
 .colorBlue {
-    width: 100%;
-    color: #1259c3;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
+  width: 100%;
+  color: #1259c3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .msg-1 {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .msg-2 {
-    width: 100%;
-    color: var(--dark-gray);
-    font-size: 12px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    
+  width: 100%;
+  color: var(--dark-gray);
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
 .piePagina {
-    font-size: 12px;
+  font-size: 12px;
 }
-
 
 /*************** Media Query ******************/
 
-@media (min-width: 768px){
-    .box1 {
-        height: 17vh;
-        padding: 2%;
-    }
-    .mainLogo1 {
-        width: 23%;
-        padding: 0%;
-    }
-    .mainLogo2 {
-        height: 5vh;
-    }
-    .search0 {
-        width: 37%;
-    }
-    .search1 {
-        height: 5vh;
-     }
-    .search2 {
-        height: 5vh;
-    }
-    .title1 {
-        width: 36%;
-        height: 11vh;
-        margin: 0% 1% 0% 3%;
-        align-items: center;
-    }
-    .nav1 { 
-        display: none;
-    }
-    .navStyle-1 {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 8vh;
-    }
-    ul#navStyle-2 {
-        display: flex;
-        flex-wrap: wrap;
-        width: 50%;
-        flex-direction: row;
-        box-sizing: border-box;
-        justify-content: space-between;
-        padding: 0px 60px 0px 10px;
-        margin-bottom: 5px;
-    }
-    ul#navStyle-3 {
-        display: flex;
-        flex-wrap: wrap;
-        width: 50%;
-        flex-direction: row;
-        justify-content: space-between;
-        box-sizing: border-box;
-        margin-bottom: 5px;
-        padding: 0px 10px 0px 30px;
-    }
-    .box2 {
-        height: 23vh;
-    }
-    .banner {
-        height: 23vh;
-    }
-    .bodyCentral {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .articles {
-        width: 44%;
-        height: 75vh; 
-    }
-    .imgProdBox {
-        height: 45vh;
-    }
-    .imgProduct {
-        height: 45vh;
-    }
-    .greenTruck > i {
-        font-size: 140%;
-        width: 20px;
-        height: 20px;
-    }
-    /* ------ Media Query Main Login ------ */
-    .mainLogin {
-        height: 40vh;
-    }
-    .formBox {
-        height: 40vh;
-        padding: 0% 25%;
-    }
-    /* ------ Media Query Main Register ------ */
-    .formBoxR {
-        padding: 0% 25%;
-    }
-   }
+@media (min-width: 768px) {
+  .box1 {
+    height: 17vh;
+    padding: 2%;
+  }
+  .mainLogo1 {
+    width: 23%;
+    padding: 0%;
+  }
+  .mainLogo2 {
+    height: 5vh;
+  }
+  .search0 {
+    width: 37%;
+  }
+  .search1 {
+    height: 5vh;
+  }
+  .search2 {
+    height: 5vh;
+  }
+  .title1 {
+    width: 36%;
+    height: 11vh;
+    margin: 0% 1% 0% 3%;
+    align-items: center;
+  }
+  .nav1 {
+    display: none;
+  }
+  .navStyle-1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 8vh;
+  }
+  ul#navStyle-2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0px 60px 0px 10px;
+    margin-bottom: 5px;
+  }
+  ul#navStyle-3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    padding: 0px 10px 0px 30px;
+  }
+  .box2 {
+    height: 23vh;
+  }
+  .banner {
+    height: 23vh;
+  }
+  .bodyCentral {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .articles {
+    width: 44%;
+    height: 75vh;
+  }
+  .imgProdBox {
+    height: 45vh;
+  }
+  .imgProduct {
+    height: 45vh;
+  }
+  .greenTruck > i {
+    font-size: 140%;
+    width: 20px;
+    height: 20px;
+  }
+  /* ------ Media Query Main Login ------ */
+  .mainLogin {
+    height: 40vh;
+  }
+  .formBox {
+    height: 40vh;
+    padding: 0% 25%;
+  }
+  /* ------ Media Query Main Register ------ */
+  .formBoxR {
+    padding: 0% 25%;
+  }
+}
 
-@media (min-width: 1024px){
-    
-    .mainLogo1 {
-        align-items: flex-start;
-    }
-    .mainLogo2 {
-        height: 8vh;
-    }
-    .search0 {
-        width: 44%;
-        padding: 1% 0% 3% 1%;
-    }
-    .title1 {
-        width: 27%;
-        margin: 0% 3%;
-        justify-content: flex-end;
-    }
-    .title1a {
-        margin-block-start: 0px;
-    }
-    ul#navStyle-2 {
-        padding: 0px 180px 0px 10px;
-    }
-    ul#navStyle-3 {
-        padding: 0px 10px 0px 150px;
-    }
-    .box2 {
-        height: 31vh;
-    }
-    .banner {
-        height: 31vh;
-    }
-    .title2 {
-        height: 8vh;
-    }
-    .bodyCentral {
-        height: 70vh;
-        align-items: flex-start;
-        flex-wrap: nowrap;
-    }
-    .articles {
-        width: 21%;
-        height: 51vh; 
-        transition-property: height;
-        transition-duration: 0.1s; 
-    }
-    .articles:hover {
-        height: 65vh;
-        box-shadow: 0px 0px 10px 6px rgba(0,0,0,0.5);
-        cursor: pointer;
-    }
-    .articles:hover .descriptionBox .greenTruck i{
-        transform: rotate(-90deg);
-    } 
-    .imgProdBox {
-        height: 40vh;
-    }
-    .imgProduct {
-        height: 35vh;
-    }
-    .greenTruck > i {
-        font-size: 110%;
-        width: 15px;
-        height: 15px;
-    }
-    .description {
-        display: none;   
-    }
-    .articles:hover .description {
-        display: block;
-    }
-    /* ------ Media Query Main Login ------ */
-    .mainLogin {
-        height: 50vh;
-    }
-    .formBox {
-        height: 50vh;
-    }
-    /* ------ Media Query Main Register ------ */
-    .mainRegister {
-        height: 220vh;
-    }
-    .formBoxR {
-        height: 220vh;
-    }
-    .footerBox {
-        height: 28vh;
-    }
-    .footerBox-2 {
-        flex-direction: row;
-    }
-    .footerArticles {
-        width: 33%;
-        height: 20vh;
-    }
+@media (min-width: 1024px) {
+  .mainLogo1 {
+    align-items: flex-start;
+  }
+  .mainLogo2 {
+    height: 8vh;
+  }
+  .search0 {
+    width: 44%;
+    padding: 1% 0% 3% 1%;
+  }
+  .title1 {
+    width: 27%;
+    margin: 0% 3%;
+    justify-content: flex-end;
+  }
+  .title1a {
+    margin-block-start: 0px;
+  }
+  ul#navStyle-2 {
+    padding: 0px 180px 0px 10px;
+  }
+  ul#navStyle-3 {
+    padding: 0px 10px 0px 150px;
+  }
+  .box2 {
+    height: 31vh;
+  }
+  .banner {
+    height: 31vh;
+  }
+  .title2 {
+    height: 8vh;
+  }
+  .bodyCentral {
+    height: 70vh;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+  .articles {
+    width: 21%;
+    height: 51vh;
+    transition-property: height;
+    transition-duration: 0.1s;
+  }
+  .articles:hover {
+    height: 65vh;
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  .articles:hover .descriptionBox .greenTruck i {
+    transform: rotate(-90deg);
+  }
+  .imgProdBox {
+    height: 40vh;
+  }
+  .imgProduct {
+    height: 35vh;
+  }
+  .greenTruck > i {
+    font-size: 110%;
+    width: 15px;
+    height: 15px;
+  }
+  .description {
+    display: none;
+  }
+  .articles:hover .description {
+    display: block;
+  }
+  /* ------ Media Query Main Login ------ */
+  .mainLogin {
+    height: 50vh;
+  }
+  .formBox {
+    height: 50vh;
+  }
+  /* ------ Media Query Main Register ------ */
+  .mainRegister {
+    height: 220vh;
+  }
+  .formBoxR {
+    height: 220vh;
+  }
+  .footerBox {
+    height: 28vh;
+  }
+  .footerBox-2 {
+    flex-direction: row;
+  }
+  .footerArticles {
+    width: 33%;
+    height: 20vh;
+  }
 }

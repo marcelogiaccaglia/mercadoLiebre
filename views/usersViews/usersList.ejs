@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-include("../partials/head")%>
+
+  <body>
+    <%-include("../partials/header")%>
+
+    <main class="mainLogin">
+      <!-- Main Login -->
+      <h2>Nuestros Clientes</h2>
+      <ul>
+        <% for (let i = 0; i < userBD.length; i++) { %>
+        <a href="/users/detail/<%= userBD[i].id %> ">
+          <li><%= userBD[i].name %> <%= userBD[i].lastName %></li></a
+        >
+        <% } %>
+      </ul>
+    </main>
+
+    <%-include("../partials/footer")%>
+  </body>
+</html>
