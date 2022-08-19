@@ -9,16 +9,18 @@
     /></a>
   </div>
   <div class="search0">
-    <input
-      class="search1"
-      type="search"
-      name="Buscar"
-      id="Buscar"
-      placeholder="Buscar productos, marcas y más."
-    />
-    <button class="search2" type="submit">
-      <i class="fa-solid fa-magnifying-glass"></i>
-    </button>
+    <form action="/products/search" method="get">
+      <input
+        class="search1"
+        type="search"
+        name="search"
+        id=""
+        placeholder="Buscar productos, marcas y más."
+      />
+      <button class="search2" type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
   </div>
   <div class="title1">
     <h5 class="title1a">
@@ -32,8 +34,8 @@
   <nav class="navStyle-1">
     <ul id="navStyle-2">
       <li><a href="/#sale">Ofertas</a></li>
-      <li><a href="">Tiendas Oficiales</a></li>
-      <li><a href="">Vender</a></li>
+      <li><a href="/products/products">Nuestros Poductos</a></li>
+      <li><a href="/products/create">Vende un Producto</a></li>
       <li><a href="">Ayuda</a></li>
     </ul>
     <ul id="navStyle-3">

@@ -12,6 +12,15 @@
           <input
             class="loginBox-1"
             type="text"
+            name="id"
+            id="id"
+            placeholder="id"
+            value="<%= userEdit.id %> "
+            hidden
+          />
+          <input
+            class="loginBox-1"
+            type="text"
             name="name"
             id="name"
             placeholder="Nombre Usuario"
@@ -40,7 +49,7 @@
             type="date"
             name="birht"
             id="birht"
-            value="<%= userEdit.birht %> "
+            value="<%= Number(userEdit.birht) %> "
           />
           <input
             class="loginBox-1"

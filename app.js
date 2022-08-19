@@ -1,6 +1,9 @@
-/* All required */
+/* NPM required */
 const EXPRESS = require("express");
 const METHODOVERRIDE = require("method-override");
+const PATH = require("path");
+
+/* Routes required */
 const homeRoute = require("./routes/homeRoute");
 const usersRoute = require("./routes/usersRoute");
 const productsRoute = require("./routes/productsRoute");
@@ -22,11 +25,7 @@ APP.use("/", homeRoute);
 APP.use("/users", usersRoute);
 APP.use("/products", productsRoute);
 
-APP.get("/products/:idProducts", function (req, res) {
-  let paramsProducts = req.params.idProducts;
-  res.send("Detalles del producto " + paramsProducts);
-});
-
+/* Error 404 */
 APP.use((req, res, next) => {
   res.status(404).send("La pagina no existe");
 });

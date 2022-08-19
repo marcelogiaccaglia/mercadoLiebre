@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-include("../partials/head")%>
+
+  <body>
+    <%-include("../partials/header")%>
+
+    <section class="box2">
+      <!-- Banner -->
+      <img
+        class="banner"
+        src="/imagenes/img-home-banner.jpg"
+        alt="img-home-banner"
+      />
+    </section>
+    <main class="mainSection">
+      <!-- Title -->
+      <div class="title2">
+        <h3 class="title2a">Estos son nuestros productos</h3>
+      </div>
+      <section class="bodyCentral">
+        <!-- Main Index -->
+        <% for (let i = 0; i < productBD.length; i++){ %>
+        <article class="articles">
+            <div class="imgProdBox">
+              <img
+                class="imgProduct"
+                src="/imagenes/img-cafetera-moulinex.jpg"
+                alt="img-cafetera-moulinex"
+              />
+            </div>
+            <a
+          href="/products/products/<%= productBD[i].id %> "
+          target="_blank"
+          rel="">  
+            <div class="descriptionBox">
+              <p class="greenTruck"><i class="fa-solid fa-truck"></i></p>
+              <p class="precios">$ <%= productBD[i].price %></p>
+              <p class="sale"><%= productBD[i].discount %>% OFF</p>
+              <div class="description">
+                <h4 class="description-1"><%= productBD[i].name %></h4>
+              </div></a>
+            </div>
+          </article>
+        <% } %>
+      </section>
+    </main>
+
+    <%-include("../partials/footer")%>
+  </body>
+</html>

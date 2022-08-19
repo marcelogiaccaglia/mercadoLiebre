@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-include("../partials/head")%>
+
+  <body>
+    <%-include("../partials/header")%>
+
+    <main class="mainRegister">
+      <!-- Main Register -->
+      <form class="formBoxR" action="/products/edit?_method=PUT" method="post">
+        <div class="registerBox">
+          <input
+            class="loginBox-1"
+            type="text"
+            name="id"
+            id=""
+            placeholder="id"
+            value="<%= productEdit.id %>"
+            hidden
+          />
+          <input
+            class="loginBox-1"
+            type="text"
+            name="name"
+            id=""
+            placeholder="Nombre Producto"
+            value="<%= productEdit.name %> "
+          />
+          <input
+            class="loginBox-1"
+            type="number"
+            name="price"
+            id=""
+            placeholder="Precio Poducto"
+            value="<%= productEdit.price %>"
+          />
+          <input
+            class="loginBox-1"
+            type="number"
+            name="discount"
+            id=""
+            placeholder="Descuento"
+            value="<%= productEdit.discount %>"
+          />
+          <input
+            class="loginBox-1"
+            type="number"
+            name="finalPrice"
+            id=""
+            placeholder="Precio Final"
+            value="<%= productEdit.finalPrice %>"
+          />
+        </div>
+        <div class="titleRegister">
+          <h3>Foto Usuario</h3>
+        </div>
+        <div class="photoBox">
+          <input class="loginBox-1" type="file" name="photo" id="foto" />
+        </div>
+        <div class="passBox">
+          <input
+            class="loginBox-1"
+            type="text"
+            name="detail"
+            id=""
+            placeholder="Detalle Producto"
+            value="<%= productEdit.detail %>"
+          />
+          <input
+            class="loginBox-1"
+            type="text"
+            name="code"
+            id=""
+            placeholder="Codigo Producto"
+            minlength="6"
+            value="<%= productEdit.code %>"
+          />
+          <button class="loginButton" type="submit">Enviar</button>
+          <button class="resetButton" type="reset">Borrar Datos</button>
+        </div>
+      </form>
+    </main>
+
+    <%-include("../partials/footer")%>
+  </body>
+</html>

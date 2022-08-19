@@ -7,12 +7,12 @@
 
     <main class="mainLogin">
       <!-- Main Login -->
-      <h2>Nuestros Clientes</h2>
+      <h2>Nuestros Clientes Encontrados</h2>
       <ul>
-        <% for (let i = 0; i < userBD.length; i++) { %>
-        <a href="/users/detail/<%= userBD[i].id %> ">
-          <li><%= userBD[i].name %> <%= userBD[i].lastName %></li></a
-        >
+        <% for (let i = 0; i < search.length; i++) {%>
+        <a href="/users/detail/<%= search[i].id %> ">
+          <li><%= search[i].name %> <%= search[i].lastName %></li>
+        </a>
         <% } %>
       </ul>
       <br />
