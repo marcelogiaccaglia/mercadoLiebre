@@ -6,6 +6,7 @@ let productBD = JSON.parse(
   fs.readFileSync("data/productBD.json", { encoding: "utf-8" })
 );
 
+/* Code of all controllers */
 let productsController = {
   index: (req, res) => {
     res.render("productsViews/index");
@@ -22,7 +23,6 @@ let productsController = {
         productSearch.push(productBD[i]);
       }
     }
-    console.log(productSearch);
     res.render("productsViews/productSearch", {
       productSearch: productSearch,
     });
@@ -41,7 +41,7 @@ let productsController = {
   create: (req, res) => {
     res.render("productsViews/productCreate");
   },
-  store: (req, res) => {
+  store: (req, res, next) => {
     /* New product with POST */
     let newProduct = {
       id: null,
@@ -49,7 +49,7 @@ let productsController = {
       price: parseInt(req.body.price),
       discount: parseInt(req.body.discount),
       finalPrice: parseInt(req.body.finalPrice),
-      photo: req.body.photo,
+      photo: "productDefault.jpg",
       detail: req.body.detail,
       code: parseInt(req.body.code),
     };
@@ -60,6 +60,11 @@ let productsController = {
       newIdProduct = i + 1;
     }
     newProduct.id = newIdProduct;
+
+    /* Giving an image to DB */
+    if (req.files.length) {
+      newProduct.photo = req.files[0].filename;
+    }
 
     /* New sequence of all .id */
     for (let i = 0; i < productBD.length; i++) {
@@ -85,7 +90,7 @@ let productsController = {
     }
     res.render("productsViews/productEdit", { productEdit: productEdit });
   },
-  upDate: (req, res) => {
+  upDate: (req, res, next) => {
     let position;
     /* Finding the position and Id product with PUT/POST*/
     for (let i = 0; i < productBD.length; i++) {
@@ -100,6 +105,15 @@ let productsController = {
     productBD[position].finalPrice = parseInt(req.body.finalPrice);
     productBD[position].detail = req.body.detail;
     productBD[position].code = parseInt(req.body.code);
+
+    /* Editing image to DB */
+    if (req.files.length === 0 && productBD[position].photo !== undefined) {
+      productBD[position].photo = productBD[position].photo;
+    } else if (req.files.length === 0) {
+      productBD[position].photo = "userDefault.jpg";
+    } else {
+      productBD[position].photo = req.files[0].filename;
+    }
 
     /* Writing a new JSON */
     let editBDtoJSON = JSON.stringify(productBD);

@@ -1,28 +1,32 @@
 /* NPM Require */
 const fs = require("fs");
 const path = require("path");
+const BCRYPT = require("bcrypt");
 
 /* Reading Data Base from JSON */
 let userBD = JSON.parse(
   fs.readFileSync("data/userBD.json", { encoding: "utf-8" })
 );
 
+/* Code of all Controllers */
 let usersController = {
   login: function (req, res) {
     res.render("usersViews/login");
   },
   /* crear ruta para access de ususarios o admin */
-  /* Validar con bcrypt */
   access: (req, res) => {
     let user = req.body.email;
-    /* Finding the User */
+    let userPass = req.body.password;
+    /* Finding the User and validation with Bcrypt*/
     for (let i = 0; i < userBD.length; i++) {
-      if (user === userBD[i].email) {
+      if (
+        user === userBD[i].email &&
+        BCRYPT.compareSync(userPass, userBD[i].password1)
+      ) {
         res.redirect("usersList");
-      } else {
-        res.send("El usuario no existe");
       }
     }
+    res.send("El usuario no existe");
   },
   search: (req, res) => {
     /* Search with Query */
@@ -39,7 +43,7 @@ let usersController = {
   register: (req, res) => {
     res.render("usersViews/register");
   },
-  create: (req, res) => {
+  create: (req, res, next) => {
     /* New user with POST */
     let newUser = {
       id: null,
@@ -50,9 +54,8 @@ let usersController = {
       adress: req.body.adress,
       userTipe: req.body.userTipe,
       interest: req.body.interest,
-      photo: req.body.photo,
-      password1: req.body.password1,
-      password2: req.body.password2,
+      photo: "userDefault.jpg",
+      password1: BCRYPT.hashSync(req.body.password1, 10),
     };
 
     /* Giving a new Id to new user */
@@ -60,6 +63,11 @@ let usersController = {
     for (let i = 0; i <= userBD.length; i++) {
       newId = i + 1;
       newUser.id = newId;
+    }
+
+    /* Giving an image to DB */
+    if (req.files.length) {
+      newUser.photo = req.files[0].filename;
     }
 
     /* New sequence of all .id */
@@ -101,7 +109,7 @@ let usersController = {
     }
     res.render("usersViews/userEdit", { userEdit: userEdit });
   },
-  upDate: (req, res) => {
+  upDate: (req, res, next) => {
     let position;
     /* Finding the position and Id user with PUT/POST*/
     for (let i = 0; i < userBD.length; i++) {
@@ -109,17 +117,28 @@ let usersController = {
         position = i;
       }
     }
-    /* Editing user */
-    (userBD[position].name = req.body.name),
-      (userBD[position].lastName = req.body.lastName),
-      (userBD[position].email = req.body.email),
-      (userBD[position].birht = req.body.birht),
-      (userBD[position].adress = req.body.adress),
-      (userBD[position].userTipe = req.body.userTipe),
-      (userBD[position].interest = req.body.interest),
-      (userBD[position].photo = req.body.photo),
-      (userBD[position].password1 = req.body.password1),
-      (userBD[position].password2 = req.body.password2);
+
+    /* Compare current passwword and edit for a new (true) */
+    if (BCRYPT.compareSync(req.body.password1, userBD[position].password1)) {
+      /* Editing user */
+      (userBD[position].name = req.body.name),
+        (userBD[position].lastName = req.body.lastName),
+        (userBD[position].email = req.body.email),
+        (userBD[position].birht = req.body.birht),
+        (userBD[position].adress = req.body.adress),
+        (userBD[position].userTipe = req.body.userTipe),
+        (userBD[position].interest = req.body.interest),
+        (userBD[position].photo = req.body.photo),
+        (userBD[position].password1 = BCRYPT.hashSync(req.body.password2, 10));
+    } else {
+      return res.send("contraseña invalida");
+    }
+
+    if (req.files.length === 0) {
+      userBD[position].photo = "userDefault.jpg";
+    } else {
+      userBD[position].photo = req.files[0].filename;
+    }
 
     /* Writing a new JSON */
     let editUserToJSON = JSON.stringify(userBD);

@@ -7,7 +7,12 @@
 
     <main class="mainRegister">
       <!-- Main Register -->
-      <form class="formBoxR" action="/products/okStore" method="post">
+      <form
+        class="formBoxR"
+        enctype="multipart/form-data"
+        action="/products/okStore"
+        method="post"
+      >
         <div class="registerBox">
           <input class="loginBox-1" type="number" name="id" id="" hidden />
           <input
@@ -43,7 +48,7 @@
           <h3>Foto Usuario</h3>
         </div>
         <div class="photoBox">
-          <input class="loginBox-1" type="file" name="photo" id="foto" />
+          <input class="loginBox-1" type="file" name="photo" id="" />
         </div>
         <div class="passBox">
           <input

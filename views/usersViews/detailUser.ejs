@@ -11,6 +11,14 @@
         Detalle de Nuestro Cliente <%= userSelect.name %>
       </h2>
       <div class="detailInfo">
+        <p>Fotografia:</p>
+        <img
+          src="/imagesUser/<%= userSelect.photo %>"
+          alt="imagen usuario"
+          width="150px"
+        />
+      </div>
+      <div class="detailInfo">
         <p>
           Nombre Completo: <%= userSelect.name %> <%= userSelect.lastName %>
         </p>
@@ -29,12 +37,6 @@
       </div>
       <div class="detailInfo">
         <p>Intereses: <%= userSelect.interest %></p>
-      </div>
-      <div class="detailInfo">
-        <p>Fotografia: <%= userSelect.photo %></p>
-      </div>
-      <div class="detailInfo">
-        <p>Contraseña: <%= userSelect.password1 %></p>
       </div>
       <div class="detailInfo">
         <form action="/users/edit/<%= userSelect.id %>" method="get">

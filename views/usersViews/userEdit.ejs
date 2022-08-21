@@ -7,7 +7,12 @@
 
     <main class="mainRegister">
       <!-- Main Register -->
-      <form class="formBoxR" action="/users/edit?_method=PUT" method="post">
+      <form
+        class="formBoxR"
+        enctype="multipart/form-data"
+        action="/users/edit?_method=PUT"
+        method="post"
+      >
         <div class="registerBox">
           <input
             class="loginBox-1"
@@ -131,18 +136,16 @@
             type="password"
             name="password1"
             id="password"
-            placeholder="Contraseña"
+            placeholder="Contraseña Actual"
             minlength="8"
-            value="<%= userEdit.password1 %> "
           />
           <input
             class="loginBox-1"
             type="password"
             name="password2"
             id="password"
-            placeholder="Confirmar Contraseña"
+            placeholder="Contraseña Nueva"
             minlength="8"
-            value="<%= userEdit.password2 %> "
           />
           <button class="loginButton" type="submit">Enviar</button>
           <button class="resetButton" type="reset">

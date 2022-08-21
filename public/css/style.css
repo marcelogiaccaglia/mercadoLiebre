@@ -53,13 +53,20 @@ body {
   align-items: center;
 }
 .search1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: center;
+}
+.search2 {
   border: 0px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   width: 85%;
   height: 7vh;
 }
-.search2 {
+.search3 {
   border: 0px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -498,10 +505,10 @@ a {
   .search0 {
     width: 37%;
   }
-  .search1 {
+  .search2 {
     height: 5vh;
   }
-  .search2 {
+  .search3 {
     height: 5vh;
   }
   .title1 {

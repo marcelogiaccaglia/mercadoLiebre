@@ -7,7 +7,12 @@
 
     <main class="mainRegister">
       <!-- Main Register -->
-      <form class="formBoxR" action="/products/edit?_method=PUT" method="post">
+      <form
+        class="formBoxR"
+        enctype="multipart/form-data"
+        action="/products/edit?_method=PUT"
+        method="post"
+      >
         <div class="registerBox">
           <input
             class="loginBox-1"
@@ -55,7 +60,13 @@
           <h3>Foto Usuario</h3>
         </div>
         <div class="photoBox">
-          <input class="loginBox-1" type="file" name="photo" id="foto" />
+          <input
+            class="loginBox-1"
+            type="file"
+            name="photo"
+            id=""
+            value="<%= productEdit.photo %>"
+          />
         </div>
         <div class="passBox">
           <input
